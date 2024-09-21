@@ -3,9 +3,12 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
-      height: {
-        '128': '32rem',
-        '144': '36rem',
+      container: {
+        center: true,
+        padding: '1rem', 
+        screens: {
+          lg: '1315px', 
+        },
       },
     },
   },
