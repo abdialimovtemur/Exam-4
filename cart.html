@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/output.css">
 </head>
+
 <body>
 
 
@@ -69,9 +71,27 @@
         </nav>
     </header>
 
+    <main class="flex container py-16">
+        <div class="cartPage flex flex-col gap-16">
+        </div>
+
+        <div class="modal"></div>
+    </main>
+
+
+    <!-- cardlarni maluomtini ko'rsatuvchi modal -->
+
+
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"style="display: none;">
+        <div id="modalContent" class="bg-white p-6 rounded shadow-lg flex flex-col items-center px-20 py-3 gap-3">
+
+        </div>
+    </div>
+
+
     <!-- footer qismi -->
 
-    <footer class="flex flex-col px-24 bg-[#BCDDFE] pt-32">
+    <footer class="flex flex-col px-24 bg-[#BCDDFE] pt-32 mt-60">
         <div class="flex justify-between">
             <div class="flex flex-col gap-3 w-72">
                 <img src="./imgs/logo.svg" alt="logo" class="w-[133px]">
@@ -100,5 +120,8 @@
             <img src="./imgs/creditCards.svg" alt="">
         </div>
     </footer>
+
+    <script src="./cart.js"></script>
 </body>
+
 </html>

@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="icon" href="./imgs/IconLogo.svg">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
@@ -43,6 +42,7 @@
                 </a>
                 <a href="./cart.html" class="flex items-center gap-3"><i class="fa-solid fa-cart-shopping font-semibold"
                         style="color: #000000;"></i>
+                        <span class="count w-6 h-6 flex items-center justify-center bg-red-700 rounded-3xl relative bottom-3 right-4 text-white"></span>
                     <p class="text-[#262626]">Items</p>
                 </a>
                 <a href="#" class="flex items-center gap-3">
@@ -85,7 +85,7 @@
         <div class="relative z-20 mb-52">
 
 
-            <!-- caruse qismi -->
+            <!-- carusel qismi -->
 
             <div id="carouselExample" class="relative w-full overflow-hidden">
 
@@ -109,11 +109,11 @@
 
             <!-- bannerning ustidai cardlar -->
 
-            <div class="absolute z-40 top-[450px] flex ml-32">
+            <div class="absolute z-40 top-[450px] flex px-20">
                 <div class="relative">
                     <img src="./imgs/sumka.svg" alt="">
                     <div class="flex flex-col absolute top-0 mx-16 pt-4">
-                        <p class="text-[#223263] text-xl font-bold mb-52 w-56">FS - QUILTED MAXI CROSS BAG</p>
+                        <p class="text-[#223263] text-xl font-bold mb-40 w-56">FS - QUILTED MAXI CROSS BAG</p>
 
                         <div class="flex gap-2">
                             <p class="text-[#9098B1] text-xl font-bold">$534,33</p>
@@ -129,7 +129,7 @@
                 <div class="relative">
                     <img src="./imgs/yellow-crasofka.svg" alt="">
                     <div class="flex flex-col absolute top-0 mx-16 pt-4">
-                        <div class="mb-56 flex gap-5">
+                        <div class="mb-40 flex gap-5">
                             <p class="text-[#223263] text-xl font-bold">FS - QUILTED MAXI CROSS BAG</p>
                             <p class="text-[#40BFFF] text-3xl font-bold">$299,43</p>
 
@@ -148,7 +148,7 @@
                     <img src="./imgs/red-krasofka.svg" alt="">
                     <div class="flex flex-col absolute top-0 mx-16 pt-4">
                         <p class="text-[#223263] text-xl font-bold w-56">FS - Nike Air Max 270 React...</p>
-                        <div class="flex gap-2 mb-52">
+                        <div class="flex gap-2 mb-40">
                             <p class="text-[#9098B1] text-xl font-bold">$534,33</p>
                             <p class="text-[#FB7181] text-xl font-bold">24% Off</p>
                         </div>
@@ -170,7 +170,7 @@
             <!-- categoriyalar yani backenddan keladigan cardlarning navbari -->
 
             <div class="categories flex gap-10 py-10">
-                <!-- categories nav -->
+                
             </div>
         </div>
 
@@ -183,10 +183,18 @@
             </div>
         </div>
 
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="modal-content w-[500px] h-[400px] bg-white rounded-lg shadow-lg relative p-5">
+                <button id="closeModalBtn" class="absolute top-3 right-3 text-gray-600 hover:text-gray-900">close</button>
+                <!-- Modal Content -->
+
+                <h2 class="text-xl font-bold mb-4">Modal Title</h2>
+                <p class="text-gray-700">This is a simple modal. You can put any content you want here.</p>
+            </div>
+        </div>
+
         <!-- footer yuqorisadagi section -->
-
         <div class="text-2xl text-sky-500 flex justify-center pb-28"><a href="#" class="border-b-4 border-sky-500">LEARN MORE</a></div>
-
         <div class="px-64 flex justify-between">
             <div class="flex flex-col gap-3 items-center">
                 <img src="./imgs/shipping.svg" alt="shipping">
@@ -217,7 +225,7 @@
 
 
     <!-- footer qismi -->
-
+    <!-- <div class="cartPage"></div> -->
 
     <footer class="flex flex-col px-24 bg-[#BCDDFE] pt-32 container">
         <div class="flex justify-between">
